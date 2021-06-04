@@ -4,7 +4,8 @@
   "description": "To-do-list ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "testwatch": "jest --watchAll",
     "dev": "webpack --mode=development",
     "watch": "webpack --mode=development --watch",
     "build": "webpack --mode=production"
@@ -12,10 +13,15 @@
   "author": "Jocyline-Galiwango",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "@babel/preset-env": "^7.14.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.26.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "jest": "^27.0.4",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
@@ -24,6 +30,8 @@
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "babel-jest": "^27.0.2",
+    "ts-jest": "^27.0.2"
   }
 }
