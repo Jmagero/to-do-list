@@ -1,17 +1,17 @@
-const removeElements = (parent) => {
+exports.removeElements = (parent) => {
   while (parent.lastChild) {
     parent.removeChild(parent.lastChild);
   }
 };
 
-const displayElement = (element) => {
+exports.displayElement = (element) => {
   element.style.display = '';
 };
 
-const removeDisplay = (element) => {
+exports.removeDisplay = (element) => {
   element.style.display = 'none';
 };
 
-export {
-  removeElements, displayElement, removeDisplay,
-};
+// export {
+//   removeElements, displayElement, removeDisplay,
+// };
