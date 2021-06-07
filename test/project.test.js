@@ -1,4 +1,4 @@
-import Project from '../src/project';
+const { Project } = require('../src/project');
 
 test('it creates a project object', () => {
   const newpojrct = Project('name');
@@ -8,10 +8,9 @@ test('it creates a project object', () => {
 test('it does not create a project without a name attribute', () => {
   const newpro = Project();
   expect(newpro.name).toBeFalsy();
-})
+});
 
 test('it creates a project object with a name attribute', () => {
   const newpojrct = Project('Project-one');
   expect(newpojrct.name).toEqual('Project-one');
 });
-
