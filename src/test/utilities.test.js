@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import { removeElements } from "../src/utilities";
+import { removeElements } from "../utilities";
 
 test ('should remove last child', () =>{
     const items = document.createElement('div');
